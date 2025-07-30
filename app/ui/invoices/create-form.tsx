@@ -47,7 +47,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           <div id="customer-error" aria-live="polite" aria-atomic="true">
             {state.errors?.customerId &&
               state.errors.customerId.map((error: string) => (
-                <p className="mt-0 text-sm text-red-500" key={error}>
+                <p className="mt-2 text-sm text-red-500" key={error}>
                   {error}
                 </p>
               ))}
@@ -79,7 +79,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           <div id="amount-error" aria-live="polite" aria-atomic="true">
             {state.errors?.amount &&
               state.errors.amount.map((error: string) => (
-                <p className="mt-1 text-sm text-red-500" key={error}>
+                <p className="mt-2 text-sm text-red-500" key={error}>
                   {error}
                 </p>
               ))}
@@ -129,7 +129,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
         <div id="status-error" aria-live="polite" aria-atomic="true">
           {state.errors?.status &&
             state.errors.status.map((error: string) => (
-              <p className="mt-1 text-sm text-red-500" key={error}>
+              <p className="mt-2 text-sm text-red-500" key={error}>
                 {error}
               </p>
             ))}
